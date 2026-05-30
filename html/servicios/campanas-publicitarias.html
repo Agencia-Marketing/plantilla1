@@ -2,7 +2,7 @@
 <html class="light" lang="es"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>DevStudio | Expertos en Desarrollo Web</title>
+<title>Campañas Publicitarias | Logo.</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
@@ -462,36 +462,37 @@ div.card-hover:hover, .card-hover:hover {
     }
 }
 </style>
-<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
-<!-- Header / TopNavBar -->
+<body class="antialiased overflow-x-hidden">
+<!-- 1. Header (Shared TopNavBar Component) -->
 <header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
 <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
 <div class="font-headline-md text-headline-md font-bold" style="color:#0f172a;">Plantilla 1.</div>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md font-medium transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../index.html">Inicio</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../nosotros.html">Nosotros</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../index.html#servicios">Servicios</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../contacto.html">Contacto</a>
 </div>
 <div class="flex items-center gap-3">
-<a href="../p_gina_de_contacto_plantilla_1/code.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
+<a href="../contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
   <span class="icon-wrap">Contáctanos</span>
 </a>
 <button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
 </div>
 </nav>
 </header>
+<!-- 2. Hero Section -->
 <!-- Hero Section -->
 <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
 <div class="max-w-container-max mx-auto px-gutter relative z-10 text-center">
 <h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
-                DESARROLLO WEB
+                CAMPAÑAS PUBLICITARIAS
             </h1>
 <p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary-container/90 mb-12">
-                Construimos plataformas rápidas, escalables y orientadas a la conversión, integrando diseño a medida y analítica avanzada para tu negocio.
+                Maximiza tu retorno de inversión (ROI) y atrae prospectos altamente calificados con estrategias probadas en Google Ads, Meta Ads y TikTok.
             </p>
 <div class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700">
-<img alt="Desarrollo Web Visual" class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHzzOTKZMrHn0yRGW2E9CnjVnPawSHQrbHl5A5Ma7aq2rN8IuO5D8_LiWoCdxwSeu4tKXGgjVHQk5Sp_X0oG7jHivxfdEnYo1N2TsXQszPPcWDtvjiXMKpfhJovif0IiGetK6wuTsOS3Bf5kGtSybIT-CkX1LxPdlWksHUI9ArXsUJ18b5amiTsxrWeIcDZbkzYcfvf5I3A03cw4BfxdjK7_HqKQnJRudFh-HmQ5M4FFckXTO183VZu1ClgCIWElZoq5hyUYMleGky"/>
+<img alt="Hero Background" class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0OVxv2uytxwUYZ0xjmP7YB1G272Io0p0z9HX5ao233PhA_v9SlMgwDXO25Q1cxD82N0xDc1K1IKxIBaARKckCfrrhXZBhQVUVhCz2VpYxLPZqtqxecG6WZAZQZqaZ2vOmUvdLtXW_RH8mk5X0-VbMVsjeyi9Hnq20GqiF8aj8PPJ3Doq3Ai5Gci_cLjhcVdJx2FKi5kzFSQ_1gtfNn5_Zds_p7fnu-DuLlhRFdvzUwvGzzue3uNIjBf_zRead1UZ9i_2PeQhQTW9S"/>
 </div>
 </div>
 <!-- Background accents -->
@@ -500,208 +501,250 @@ div.card-hover:hover, .card-hover:hover {
 <div class="absolute bottom-10 right-10 w-96 h-96 bg-on-primary-container rounded-full blur-[120px]"></div>
 </div>
 </section>
-<!-- Benefits Bar -->
-<section class="bg-surface py-16 border-b border-outline-variant/30">
-<div class="max-w-container-max mx-auto px-gutter">
+<!-- 3. Benefits Bar -->
+<section class="bg-white py-20 relative -mt-10 mx-auto max-w-[1200px] rounded-xl shadow-xl z-20">
+<div class="px-gutter">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Benefit 1 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">responsive_layout</span>
+<!-- Col 1: Alcance Estratégico -->
+<div class="flex flex-col items-center text-center p-4">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">target</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Diseño Responsivo</h3>
-<p class="text-on-surface-variant">Experiencias perfectas en móviles, tablets y computadoras de escritorio.</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Alcance Estratégico</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Campañas hiper-segmentadas que te permiten dominar tu mercado local o expandirte a nivel global sin desperdiciar presupuesto.
+                    </p>
 </div>
-<!-- Benefit 2 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">bolt</span>
+<!-- Col 2: Google Ads -->
+<div class="flex flex-col items-center text-center p-4">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">search</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Rendimiento Optimizado</h3>
-<p class="text-on-surface-variant">Velocidad de carga ultrarrápida para mejorar el posicionamiento y la experiencia.</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Google Ads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Intercepta a usuarios con alta intención de compra justo en el momento en que buscan tus productos o servicios.
+                    </p>
 </div>
-<!-- Benefit 3 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">trending_up</span>
+<!-- Col 3: Optimización ROI -->
+<div class="flex flex-col items-center text-center p-4">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">ads_click</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Enfoque en Conversión</h3>
-<p class="text-on-surface-variant">Estrategias de UI/UX diseñadas para transformar visitantes en clientes reales.</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Optimización ROI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Análisis constante de datos para mejorar el rendimiento de tus anuncios y bajar tus costos de adquisición.
+                    </p>
 </div>
 </div>
 </div>
 </section>
-<!-- Pricing Section -->
-<section class="bg-surface-container-low py-section-padding-desktop">
+<!-- 4. Estrategia Omnicanal -->
+<section class="bg-gray-50 py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-6">El poder de Google y Meta Ads combinados</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">
+                        No dependas de una sola fuente de tráfico. Diseñamos embudos de conversión donde las redes sociales generan interés y los motores de búsqueda capturan la demanda. Todo respaldado por una medición precisa usando Google Tag Manager y GA4 para garantizar que cada peso invertido genere resultados tangibles.
+                    </p>
+</div>
+<div>
+<img alt="Omnichannel Strategy Visual" class="w-full h-auto rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida/ADBb0ui-oNtH0hLamIS0LXhaF4HaLi6BjywLELDcQsumE1D8M-2SpqB2j6sqc3xjUI4CmnYJDI_e6FRXSvAknnzN8h-AhRS8ZA8lRuEo6sl4Qnv3Qgd_8Nhx8SV2XtdmCvFnuCQrfPXQ-3IJNJpC67rK5DRyZJPi-bPsVYXHFdGatJSVzRz028RWqMMeujucb61rGMb7IkCg_D1Zk0R_aTx7Ic2s-PMpE-MAnMQSoNiQHUjpeHJcihs052OHImai"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Nuestros Planes -->
+<section class="bg-white py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-center text-on-surface mb-16">Planes de Gestión de Campañas</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Row 1 -->
+<!-- Google Search -->
+<div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">search</span>
+<h3 class="font-headline-md text-on-surface mb-2">Google Search</h3>
+<div class="text-3xl font-bold text-primary mb-6">$2,210</div>
+<ul class="space-y-3 mb-8 w-full">
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Búsqueda de palabras clave
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Propuesta de campaña
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Reporte de resultados
+                        </li>
+</ul>
+<button class="mt-auto w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">CONTRATAR</button>
+</div>
+<!-- Google Display (Featured) -->
+<div class="bg-white p-8 rounded-lg shadow-xl flex flex-col items-start border-2 border-primary relative">
+<span class="absolute top-0 right-8 -translate-y-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold">RECOMENDADO</span>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">image</span>
+<h3 class="font-headline-md text-on-surface mb-2">Google Display</h3>
+<div class="text-3xl font-bold text-primary mb-6">$3,250</div>
+<ul class="space-y-3 mb-8 w-full">
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Búsqueda de palabras clave
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Propuesta de campaña
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Reporte de resultados
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Banners para el anuncio
+                        </li>
+</ul>
+<button class="mt-auto w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">CONTRATAR</button>
+</div>
+<!-- Google Video -->
+<div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">video_library</span>
+<h3 class="font-headline-md text-on-surface mb-2">Google Video YouTube</h3>
+<div class="text-3xl font-bold text-primary mb-6">$5,479</div>
+<ul class="space-y-3 mb-8 w-full">
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Búsqueda de palabras clave
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Propuesta de campaña
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Reporte de resultados
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Creación de video
+                        </li>
+</ul>
+<button class="mt-auto w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">CONTRATAR</button>
+</div>
+<!-- Row 2 -->
+<!-- Facebook Ads -->
+<div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">facebook</span>
+<h3 class="font-headline-md text-on-surface mb-2">Facebook Ads</h3>
+<div class="text-3xl font-bold text-primary mb-6">$1,105</div>
+<ul class="space-y-3 mb-8 w-full">
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Segmentación de mercado
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Propuesta de campañas
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Reporte de resultados
+                        </li>
+</ul>
+<button class="mt-auto w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">CONTRATAR</button>
+</div>
+<!-- Instagram Ads (Featured) -->
+<div class="bg-white p-8 rounded-lg shadow-xl flex flex-col items-start border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">photo_camera</span>
+<h3 class="font-headline-md text-on-surface mb-2">Instagram Ads</h3>
+<div class="text-3xl font-bold text-primary mb-6">$1,105</div>
+<ul class="space-y-3 mb-8 w-full">
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Segmentación de mercado
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Propuesta de campañas
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Reporte de resultados
+                        </li>
+</ul>
+<button class="mt-auto w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">CONTRATAR</button>
+</div>
+<!-- TikTok Ads -->
+<div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">brand_awareness</span>
+<h3 class="font-headline-md text-on-surface mb-2">TikTok Ads</h3>
+<div class="text-3xl font-bold text-primary mb-6">$1,105</div>
+<ul class="space-y-3 mb-8 w-full">
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Segmentación de mercado
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Propuesta de campañas
+                        </li>
+<li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Reporte de resultados
+                        </li>
+</ul>
+<button class="mt-auto w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">CONTRATAR</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Creatividades que Convierten -->
+<section class="bg-gray-50 py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Planes</h2>
-<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4">Nuestros Trabajos</h2>
+<p class="font-body-lg text-on-surface-variant">Diseñamos anuncios visualmente impactantes para cada formato.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Plan 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg flex flex-col hover:-translate-y-2 transition-transform duration-300">
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Express</h4>
-<h3 class="font-headline-md text-headline-md mb-2">Landing Page</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$13,000 <span class="text-sm font-normal text-on-surface-variant">- $16,900</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1 Página de aterrizaje</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Formulario de contacto</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Botón de WhatsApp</li>
-</ul>
-<button class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors uppercase tracking-wider text-sm">CONTRATAR</button>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col items-center">
+<div class="w-full aspect-[9/16] bg-surface-container rounded-xl overflow-hidden shadow-md mb-4 group cursor-pointer">
+<img alt="Sion Capital Campaign" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD1ptOejpCMLAwdOFAFjjvpqKBOiicLoPJdD6mHQ_eF5rcDdjuy9cBj7mZLFKdZNOKEg7N5VEwes1AL4KmMKqZmMjpxIoigSoA0f3BKZ8mAVlHrsVG_rHjjN3Zdqm_V_xsAUQohYsT4gHGNbpLh6qdisyP20IlGDhlC85B9If2-FPdgE0COjeEjFrVN3GYCdSdYz985CL0XX3tuq5yUo1bsPbyTtEK6YVVIYgXXXjERnmdp0ob1gtGpmHHY0b_xjZR95lZSCoKIziY"/>
 </div>
-<!-- Plan 2 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg flex flex-col hover:-translate-y-2 transition-transform duration-300">
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Corporate</h4>
-<h3 class="font-headline-md text-headline-md mb-2">Web Informativa</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$17,550 <span class="text-sm font-normal text-on-surface-variant">- $22,100</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Hasta 5 secciones</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Blog autogestionable</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integración Google Maps</li>
-</ul>
-<button class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors uppercase tracking-wider text-sm">CONTRATAR</button>
+<p class="font-label-sm text-center text-on-surface-variant">Campaña Sector Financiero (Sion Capital)</p>
 </div>
-<!-- Plan 3 - Featured -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-xl flex flex-col ring-4 ring-primary transform scale-105 z-10 hover:-translate-y-2 transition-transform duration-300 relative">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Más Popular</div>
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Pro Business</h4>
-<h3 class="font-headline-md text-headline-md mb-2">E-commerce Básico</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$20,800 <span class="text-sm font-normal text-on-surface-variant">- $25,350</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Carrito de compras</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Pagos con tarjeta/PayPal</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestión de inventario</li>
-</ul>
-<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl hover:bg-on-primary-fixed-variant transition-colors uppercase tracking-wider text-sm shadow-lg shadow-primary/20">CONTRATAR</button>
+<div class="flex flex-col items-center">
+<div class="w-full aspect-[9/16] bg-surface-container rounded-xl overflow-hidden shadow-md mb-4 group cursor-pointer">
+<img alt="Beviederm Campaign" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLFCFCyGunvobgcUwxpVCCstFVlXXRgAwbJt8W9W-ZSsdnvTFlpis6Hk2s9jaRbUWal4eNg51slHliW7sOuMCxpK7Y52MfX73N8odkEWq30BQk83o9fKjgrO9O7k2gZiMbrVyiEPvFD-XlAmuhxUU9gMtsLJVmI5GxtURuML3v__4n4ySYMEsowKr_N1gRaZSB2v2m0ZkBFvJmuicknjxotAk78ekcnMFlrQXBI7BogUYfVz7pHMep2IDAuzKW6HzYNMiSBa1zqfa"/>
 </div>
-<!-- Plan 4 -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg flex flex-col hover:-translate-y-2 transition-transform duration-300">
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Enterprise</h4>
-<h3 class="font-headline-md text-headline-md mb-2">E-commerce Avanzado</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$25,350 <span class="text-sm font-normal text-on-surface-variant">- $29,900</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integración de ERP</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Multi-divisa y envíos</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> UX personalizada</li>
-</ul>
-<button class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors uppercase tracking-wider text-sm">CONTRATAR</button>
+<p class="font-label-sm text-center text-on-surface-variant">Campaña Estética Integral (Beviederm)</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full aspect-[9/16] bg-surface-container rounded-xl overflow-hidden shadow-md mb-4 group cursor-pointer">
+<img alt="B2B Campaign" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB16PTA899doBQBjzd6vkUZBtOiK2rm2ldWw9QYEoP2N-7Loq6xtwK_D0r6sK3WWP_EpbJXf922TqA3_pNff_qj0opMMmZpn9n41h-ahX0YP-L4l3xf2qQNATa7rM9iaXyJSus_Q_xT0uSjfgr7n1ReVddstbD4pF1beY1OXmp6PZTOv-_RAxSdgcZ--9-qK_Ng51lG9ioH2NiK4PIKRKmVOniEz7VVV0CM_5tQKSXBCrf1lBMfJ9xRsV2R48P3tM2cieFQa-x-ZEJW"/>
+</div>
+<p class="font-label-sm text-center text-on-surface-variant">Campaña Generación de Leads B2B</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full aspect-[9/16] bg-surface-container rounded-xl overflow-hidden shadow-md mb-4 group cursor-pointer">
+<img alt="E-commerce Campaign" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARiV52a30SLP-cBBqsekUW-xpe4mQEIbdrmW7hMnAqOa_PvnZ5av2XcT5_-1q93qCFuTYCFEP59HCGqMmvJmBrqDVg5djDHwcDknKMSOc59EH1Z-fB77VUnyzLw2J2eVxRWfW4jlBhq2fcftPhqzQzMjHzXZk7Pdqo1Y1rGg8CtOoIXULdPO11iksirkxa65-iUdKMNrXnIRVgPYhI8RWJcOedEEUPBXyEqYOCvEcfG8BXRDGZyMK6LvJn1AFuvbqJ1u3Gsau10T9H"/>
+</div>
+<p class="font-label-sm text-center text-on-surface-variant">Campaña E-commerce</p>
 </div>
 </div>
 </div>
 </section>
-<!-- WordPress Ecosystem -->
-<section class="relative py-section-padding-desktop overflow-hidden bg-surface">
-<div class="absolute inset-0 z-0 opacity-10">
-<img alt="Background Office" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKx_y5FG9O54q1Jytf9tJP8pgVoTxMe2yqJaaCjVEs0YEvEbiiHGeTSsPkXgP8a14nRfOU4RD280oghzMab5umvX-57WT5yPVbzek-pVUcR2o7hnhqqsCdZ3HepRTkizCKkqOVKcV9Pa3yVRYAz-LudccUsr9yrNou4S_INZTIHLaJFE_xRv7l48UqOtqwZOZlRrpnHC1alDY4lRlVbBqhf9DnGMXUbZ9Wvlveqwy98yDcfJxjJ7eyp7B5k8uIqHOz1AI1npBpJz4W"/>
-</div>
-<div class="max-w-container-max mx-auto px-gutter relative z-10">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Expertos en el ecosistema WordPress y Elementor</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Dominamos las herramientas líderes del mercado para entregarte un sitio que no solo se vea increíble, sino que sea fácil de administrar por ti.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Grid Item 1 -->
-<div class="glass-card p-10 rounded-2xl border border-outline-variant/30 flex items-start gap-6 hover:shadow-xl transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl group-hover:rotate-12 transition-transform">brush</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Diseño Pixel Perfect</h4>
-<p class="text-on-surface-variant">Atención meticulosa a cada detalle visual para reflejar fielmente tu marca.</p>
-</div>
-</div>
-<!-- Grid Item 2 -->
-<div class="glass-card p-10 rounded-2xl border border-outline-variant/30 flex items-start gap-6 hover:shadow-xl transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl group-hover:rotate-12 transition-transform">shopping_bag</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">WooCommerce</h4>
-<p class="text-on-surface-variant">Configuración avanzada de tiendas online con el plugin más potente del mundo.</p>
-</div>
-</div>
-<!-- Grid Item 3 -->
-<div class="glass-card p-10 rounded-2xl border border-outline-variant/30 flex items-start gap-6 hover:shadow-xl transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl group-hover:rotate-12 transition-transform">encrypted</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Seguridad Integrada</h4>
-<p class="text-on-surface-variant">Protección contra amenazas y auditorías de seguridad constantes.</p>
-</div>
-</div>
-<!-- Grid Item 4 -->
-<div class="glass-card p-10 rounded-2xl border border-outline-variant/30 flex items-start gap-6 hover:shadow-xl transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl group-hover:rotate-12 transition-transform">settings_suggest</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Gestión Intuitiva</h4>
-<p class="text-on-surface-variant">Panel de administración amigable para que tomes el control sin complicaciones.</p>
-</div>
-</div>
-<!-- Grid Item 5 -->
-<div class="glass-card p-10 rounded-2xl border border-outline-variant/30 flex items-start gap-6 hover:shadow-xl transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl group-hover:rotate-12 transition-transform">psychology</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Integración IA</h4>
-<p class="text-on-surface-variant">Aprovechamos la inteligencia artificial para automatizar procesos y chats.</p>
-</div>
-</div>
-<!-- Grid Item 6 -->
-<div class="glass-card p-10 rounded-2xl border border-outline-variant/30 flex items-start gap-6 hover:shadow-xl transition-all group">
-<span class="material-symbols-outlined text-primary text-4xl group-hover:rotate-12 transition-transform">search_insights</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">SEO Técnico</h4>
-<p class="text-on-surface-variant">Estructura optimizada desde la base para que Google ame tu contenido.</p>
-</div>
-</div>
+<!-- Additional Trust Section (Whitespace/Clean approach) -->
+<section class="bg-surface py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-16">Estrategias que convierten clicks en clientes.</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-40 grayscale">
+<div class="flex items-center justify-center text-headline-md font-bold">GOOGLE</div>
+<div class="flex items-center justify-center text-headline-md font-bold">META</div>
+<div class="flex items-center justify-center text-headline-md font-bold">TIKTOK</div>
+<div class="flex items-center justify-center text-headline-md font-bold">LINKEDIN</div>
 </div>
 </div>
 </section>
-<!-- Portfolio Section -->
-<section class="bg-surface-container-low py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="flex justify-between items-end mb-16">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Nuestro Trabajo</h2>
-<p class="text-on-surface-variant">Historias de éxito convertidas en código.</p>
-</div>
-<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
-                    Ver Portafolio Completo <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Portfolio Item 1 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[9/16]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sophisticated vertical mockup of a corporate digital strategy interface for M. Strategy Digital. The design uses deep purple and clean white accents with high-resolution graphs and modern typography. Soft studio lighting highlights the premium digital look within a high-end minimalist setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtAyYfbyYPie7TsLvuH0GV793U4biTrZy5uUPQERUlnlURXNkYgBOhvoulAhq5kIVT0VNfW0D4_gfPKqid_kty3vIkwcwc0wipqd7eFSe4UpjSRu6P4v84Z4M9T7wfcQAIU7Ky46DXTOcwQ4s-4TsPP5_dhjeIn4jjfainKkrWDjrpQsWGqcEp-XCAAzSOC8P31Wk9jouNG850m253k6RnefLqmgVioUu8l6h2Li9K8z6h5z47_ai_REqoKXKq_Fcg-DwP8C9BW32p"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<p class="text-white/80 text-xs font-bold tracking-widest uppercase mb-1">Corporate</p>
-<h4 class="text-white font-bold text-lg leading-tight">M. Strategy Digital</h4>
-</div>
-</div>
-<!-- Portfolio Item 2 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[9/16]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vertical phone mockup showcasing the Sistema Sando application built on GoHighLevel. The user interface features vibrant purple buttons and a clean layout for CRM management. Set against a blurred modern office background with soft lighting, emphasizing efficiency and professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSUfBdTcaCZwNd3HPuok3Ey8qVn5OxNWNjF2AHZ9984uWAxWyaSQ5E8IchJngJYVdceLbpffyt0MZkW2OQ0gaHQOEYftHA2A88FK9XcmuFrTm8wpj3CEnmu-RwOBfxPP7chcUknQgOycAQB7x6fRNrcA5SDJ1VVPn3D9H7cN-36wgU10La_Bzam1x84-IY2WuRaF9mkT6qJIyCLkWcv0xQcKP4Jrf99XLw3juBZ9pG9Ia6bsh7QG_luk0dZPbvxo4bC2wUyljc6HyW"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<p class="text-white/80 text-xs font-bold tracking-widest uppercase mb-1">GoHighLevel</p>
-<h4 class="text-white font-bold text-lg leading-tight">Sistema Sando</h4>
-</div>
-</div>
-<!-- Portfolio Item 3 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[9/16]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vertical mockup of the Trezentos consultancy website. The design is elegant and professional, featuring serif typography, minimal whitespace, and a high-end purple and slate color palette. The image conveys trust and expertise in a modern architectural digital environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlaJzcmyS6UnKgyU5pW6YbkvB2ss5_Yw7Alp--yUld8vkLmAElU7jvV0sZcgtgIMK0H96oF1Vk9rOIHxNiAbOdKZy97z9gUDNz0MrPbb3uRW3iML3grlYe101H4u5drvS1qylmBF_qr5UDlXWUFc-qGjF1Ybl49Vpu4P7TGezH37hLx_3zjd9NLErgir5KiutKkmrX5VW94XiVwIBJFOtiULmgAR43c7CDSYFQPiJtvu3-Y32W9RN1QWkrp6npgQYimc3R1iojDUEG"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<p class="text-white/80 text-xs font-bold tracking-widest uppercase mb-1">Consultoría</p>
-<h4 class="text-white font-bold text-lg leading-tight">Trezentos</h4>
-</div>
-</div>
-<!-- Portfolio Item 4 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[9/16]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A stunning 3D portfolio showcase for Functor Studio presented in a vertical format. The design features abstract floating 3D shapes and interactive UI elements with neon purple glows. The mood is futuristic and artistic, highlighting advanced creative development skills." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGgu8quvdzl5TAyUjTe5f3NmqB3_b3jPFTReXsNE5CXnGvvzHJlEDnlER7fcnK8Xx4DNtPQqOcO5gZUre3yqfZVBgGvu-emNsGWRlvAgh1jx3MUf2IpwkwNZCqiUjNex1TUiH_X6imhOkNTvbRoOfdQ6LtkwKMwu0rss6e55ZQzEweooNHsGH8lEWxkMrpsMEB2K_mE7ggD7MXW6cgtx_4tnExavFN1Mp3SYrj9PPElZhQp5Q3X8RQzB2TBnnZYHEaDWv5P4Sdwhvj"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<p class="text-white/80 text-xs font-bold tracking-widest uppercase mb-1">Portfolio 3D</p>
-<h4 class="text-white font-bold text-lg leading-tight">Functor Studio</h4>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
+<!-- 4. Footer (Shared Footer Component) -->
 <footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
@@ -745,10 +788,10 @@ div.card-hover:hover, .card-hover:hover {
     <div class="space-y-6">
       <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5>
       <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="../landing_page_plantilla_1/code.html"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
-        <li><a href="../p_gina_de_nosotros_plantilla_1/code.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
-        <li><a href="../landing_page_plantilla_1/code.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
-        <li><a href="../p_gina_de_contacto_plantilla_1/code.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
+        <li><a href="../index.html"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
+        <li><a href="../nosotros.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
+        <li><a href="../index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
+        <li><a href="../contacto.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
       </ul>
     </div>
 
@@ -784,16 +827,27 @@ div.card-hover:hover, .card-hover:hover {
                 window.requestAnimationFrame(() => {
                     const header = document.querySelector('header');
                     if (window.scrollY > 50) {
-                        header.classList.add('shadow-xl', 'h-16');
-                        header.classList.remove('h-20');
+                        header.classList.add('shadow-lg', 'py-2');
+                        header.classList.remove('py-4');
                     } else {
-                        header.classList.remove('shadow-xl', 'h-16');
-                        header.classList.add('h-20');
+                        header.classList.remove('shadow-lg', 'py-2');
+                        header.classList.add('py-4');
                     }
                     ticking = false;
                 });
                 ticking = true;
             }
         });
+
+        // CTA pulse animation toggle
+        setInterval(() => {
+            const cta = document.querySelector('.bg-white.text-primary-container');
+            if (cta) {
+                cta.classList.add('ring-4', 'ring-white/20');
+                setTimeout(() => {
+                    cta.classList.remove('ring-4', 'ring-white/20');
+                }, 1000);
+            }
+        }, 3000);
     </script>
 </body></html>

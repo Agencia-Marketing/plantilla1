@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Gestión de Redes Sociales | Logo.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface":                    "#ffffff",
+                    "surface-dim":                "#f8f9fc",
+                    "surface-container-lowest":   "#ffffff",
+                    "surface-container-low":      "#f8f9fc",
+                    "surface-container":          "#f1f0fb",
+                    "surface-container-high":     "#ede9fe",
+                    "surface-container-highest":  "#ddd6fe",
+                    "on-surface":                 "#0f172a",
+                    "on-surface-variant":         "#475569",
+                    "outline":                    "#e2e8f0",
+                    "outline-variant":            "#e2e8f0",
+                    "primary":                    "#7e22ce",
+                    "on-primary":                 "#ffffff",
+                    "primary-container":          "#7e22ce",
+                    "on-primary-container":       "#ffffff",
+                    "primary-fixed":              "#ede9fe",
+                    "on-primary-fixed":           "#3b0764",
+                    "primary-fixed-dim":          "#ddd6fe",
+                    "inverse-primary":            "#c4b5fd",
+                    "secondary":                  "#6d28d9",
+                    "on-secondary":               "#ffffff",
+                    "background":                 "#ffffff",
+                    "on-background":              "#0f172a"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg":      "0.75rem",
+                    "xl":      "1rem",
+                    "2xl":     "1.5rem",
+                    "full":    "9999px"
+                },
+                "spacing": {
+                    "gutter":                    "24px",
+                    "section-padding-desktop":   "120px",
+                    "section-padding-mobile":    "64px",
+                    "base":                      "8px",
+                    "container-max":             "1280px"
+                },
+                "fontFamily": {
+                    "display-hero":        ["Syne", "sans-serif"],
+                    "display-hero-mobile": ["Syne", "sans-serif"],
+                    "headline-lg":         ["Syne", "sans-serif"],
+                    "headline-lg-mobile":  ["Syne", "sans-serif"],
+                    "headline-md":         ["Syne", "sans-serif"],
+                    "body-lg":             ["Outfit", "sans-serif"],
+                    "body-md":             ["Outfit", "sans-serif"],
+                    "label-sm":            ["Outfit", "sans-serif"]
+                },
+                "fontSize": {
+                    "display-hero":        ["72px", {"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],
+                    "display-hero-mobile": ["40px", {"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}],
+                    "headline-lg":         ["48px", {"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"600"}],
+                    "headline-lg-mobile":  ["32px", {"lineHeight":"1.3","fontWeight":"600"}],
+                    "headline-md":         ["24px", {"lineHeight":"1.4","fontWeight":"600"}],
+                    "body-lg":             ["18px", {"lineHeight":"1.6","fontWeight":"400"}],
+                    "body-md":             ["16px", {"lineHeight":"1.65","fontWeight":"400"}],
+                    "label-sm":            ["14px", {"lineHeight":"1","letterSpacing":"0.05em","fontWeight":"600"}]
+                },
+                "transitionTimingFunction": {
+                    "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+                    "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+                    "in-out-expo": "cubic-bezier(0.87, 0, 0.13, 1)",
+                    "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+                    "glass": "cubic-bezier(0.23, 1, 0.32, 1)"
+                },
+                "transitionDuration": {
+                    "400": "400ms",
+                    "600": "600ms",
+                    "800": "800ms"
+                }
+            }
+        }
+    }
+</script>
+<style>
+    /* ================================================================
+       VIBRANT AGENCY — DEFINITIVE LIGHT THEME (Single Source of Truth)
+       ================================================================ */
+
+    /* --- Fonts --- */
+    html { scroll-behavior: smooth; }
+
+    body {
+        font-family: 'Outfit', sans-serif;
+        background-color: #ffffff;
+        color: #334155;
+        line-height: 1.65;
+    }
+
+    /* --- Headings: Syne, deep charcoal --- */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Syne', sans-serif;
+        letter-spacing: -0.03em;
+        color: #0f172a;
+        text-wrap: balance;
+    }
+
+    /* --- Body text elements --- */
+    p, li, label {
+        color: #475569;
+    }
+
+    /* --- Header: frosted white bar --- */
+    header {
+        background-color: rgba(255, 255, 255, 0.92) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid #e2e8f0 !important;
+    }
+
+    /* --- Navigation links --- */
+    nav a {
+        color: #475569 !important;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+    nav a:hover {
+        color: #7e22ce !important;
+    }
+    /* Active nav link (bold + underline) */
+    nav a.font-bold,
+    nav a[class*="border-b"] {
+        color: #7e22ce !important;
+    }
+    /* Logo text */
+    nav .font-bold:first-child,
+    nav div.font-bold {
+        color: #0f172a !important;
+    }
+
+    /* --- Section backgrounds: alternating solid whites/grays --- */
+    section {
+        background-color: #ffffff;
+        background-image: none !important;
+    }
+    .bg-surface,
+    .bg-surface-container,
+    .bg-surface-container-low,
+    .bg-surface-container-high,
+    .bg-surface-container-highest {
+        background-color: #f8f9fc !important;
+        background-image: none !important;
+    }
+    .bg-surface-container-lowest,
+    .bg-surface-bright {
+        background-color: #ffffff !important;
+        background-image: none !important;
+    }
+
+    /* --- Hero section: light amethyst tint, NO gradient --- */
+    .hero-gradient {
+        background-color: #f3f0fa !important;
+        background-image: none !important;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    /* Ensure hero text is always dark/readable */
+    .hero-gradient h1,
+    .hero-gradient h2,
+    .hero-gradient p,
+    .hero-gradient li {
+        color: #0f172a !important;
+    }
+
+    /* --- Decorative blobs: kill them entirely for consistency --- */
+    .blur-3xl, .blur-120px, .blur-150px {
+        opacity: 0 !important;
+    }
+
+    /* --- Cards: pure white, clean border, soft lift on hover --- */
+    .bg-white,
+    [class*="bg-white"] {
+        background-color: #ffffff !important;
+        background-image: none !important;
+        backdrop-filter: none !important;
+    }
+    div.bg-white,
+    div[class*="bg-white"] {
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    div.bg-white:hover,
+    div[class*="bg-white"]:hover {
+        transform: translateY(-4px);
+        border-color: #c4b5fd;
+        box-shadow: 0 8px 24px rgba(124, 58, 237, 0.08);
+    }
+
+    /* --- Icon badge inside cards --- */
+    .bg-primary-fixed,
+    [class*="bg-primary-fixed"] {
+        background-color: #ede9fe !important;
+        background-image: none !important;
+        color: #7e22ce !important;
+    }
+    .bg-primary-fixed *,
+    [class*="bg-primary-fixed"] * {
+        color: #7e22ce !important;
+    }
+
+    /* --- Primary brand button / CTA --- */
+    a.bg-primary-container,
+    button.bg-primary-container,
+    a.bg-primary,
+    button.bg-primary {
+        background-color: #7e22ce !important;
+        background-image: none !important;
+        color: #ffffff !important;
+        border: none !important;
+        box-shadow: 0 3px 10px rgba(124, 58, 237, 0.20);
+        transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    a.bg-primary-container:hover,
+    button.bg-primary-container:hover,
+    a.bg-primary:hover,
+    button.bg-primary:hover {
+        background-color: #6d28d9 !important;
+        box-shadow: 0 6px 16px rgba(124, 58, 237, 0.30) !important;
+        transform: translateY(-1px);
+    }
+    a.bg-primary-container *,
+    button.bg-primary-container *,
+    a.bg-primary *,
+    button.bg-primary * {
+        color: #ffffff !important;
+    }
+
+    /* --- "Why us" / full-bleed purple section --- */
+    section.bg-primary {
+        background-color: #7e22ce !important;
+        background-image: none !important;
+    }
+    section.bg-primary h2,
+    section.bg-primary h3,
+    section.bg-primary h4,
+    section.bg-primary p,
+    section.bg-primary span,
+    section.bg-primary li {
+        color: #ffffff !important;
+    }
+
+    /* --- Glass-card in dark sections (keeps white text on purple bg) --- */
+    section.bg-primary .glass-card {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        backdrop-filter: blur(6px);
+    }
+    section.bg-primary .glass-card * {
+        color: #ffffff !important;
+    }
+
+    /* --- Text utility overrides (fix inherited Tailwind color tokens) --- */
+    .text-on-surface          { color: #0f172a !important; }
+    .text-on-surface-variant  { color: #475569 !important; }
+    .text-on-primary          { color: #ffffff !important; }   /* white — used in purple CTAs */
+    .text-primary             { color: #7e22ce !important; }
+    .text-on-primary-container{ color: #ffffff !important; }
+    .text-on-primary-fixed    { color: #3b0764 !important; }
+
+    /* Material icon inside nav / buttons inherits parent color */
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
+
+    /* --- Images --- */
+    img {
+        border-radius: 1rem;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    /* --- Scrollbar --- */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f8f9fc; }
+    ::-webkit-scrollbar-thumb { background: #c4b5fd; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #7e22ce; }
+
+    /* --- Fix: bg-white/10, bg-white/20 inside purple sections stay transparent --- */
+    section.bg-primary [class*="bg-white/"],
+    section.bg-primary [class*="bg-on-primary"] {
+        background-color: transparent !important;
+        background-image: none !important;
+        backdrop-filter: none !important;
+        border-color: rgba(255, 255, 255, 0.15) !important;
+    }
+    /* The glass grid wrapper itself */
+    section.bg-primary div[class*="bg-white"] {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    /* Each glass-card cell inside purple section: semi-transparent white */
+    section.bg-primary div.glass-card,
+    section.bg-primary [class*="glass-card"] {
+        background: rgba(255, 255, 255, 0.10) !important;
+        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+        backdrop-filter: blur(6px) !important;
+        -webkit-backdrop-filter: blur(6px) !important;
+        box-shadow: none !important;
+    }
+    section.bg-primary div.glass-card:hover,
+    section.bg-primary [class*="glass-card"]:hover {
+        background: rgba(255, 255, 255, 0.16) !important;
+        border-color: rgba(255, 255, 255, 0.30) !important;
+        transform: translateY(-3px);
+    }
+    
+    /* --- Footer: dark purple bg, ALL text white --- */
+    footer, footer * { color: #ffffff !important; }
+    footer {
+        background-color: #3b0764 !important;
+        background-image: none !important;
+    }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div.font-bold {
+        color: #ffffff !important;
+        font-family: 'Syne', sans-serif;
+    }
+    footer p, footer span, footer li, footer a, footer div, footer label {
+        color: rgba(255, 255, 255, 0.85) !important;
+        font-family: 'Outfit', sans-serif;
+    }
+    footer h5, footer [class*="text-label"] {
+        color: rgba(255, 255, 255, 0.55) !important;
+        letter-spacing: 0.08em;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    footer a:hover {
+        color: #c4b5fd !important;
+    }
+    footer button {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+        color: #ffffff !important;
+        transition: background-color 0.2s ease;
+    }
+    footer button:hover { background-color: rgba(255, 255, 255, 0.22) !important; }
+    footer hr, footer [class*="border-"] { border-color: rgba(255, 255, 255, 0.15) !important; }
+    footer .material-symbols-outlined { color: rgba(255, 255, 255, 0.7) !important; }
+
+    /* --- ULTRA STRONG PURPLE SECTION TEXT FIX --- */
+    section[class*="bg-primary"] h1,
+    section[class*="bg-primary"] h2,
+    section[class*="bg-primary"] h3,
+    section[class*="bg-primary"] h4,
+    section[class*="bg-primary"] h5,
+    section[class*="bg-primary"] h6,
+    section[class*="bg-primary"] p,
+    section[class*="bg-primary"] span,
+    section[class*="bg-primary"] li,
+    section[class*="bg-primary"] div,
+    section[class*="bg-primary"] a,
+    div[class*="bg-primary"] h1,
+    div[class*="bg-primary"] h2,
+    div[class*="bg-primary"] h3,
+    div[class*="bg-primary"] h4,
+    div[class*="bg-primary"] h5,
+    div[class*="bg-primary"] h6,
+    div[class*="bg-primary"] p,
+    div[class*="bg-primary"] span,
+    div[class*="bg-primary"] li,
+    div[class*="bg-primary"] a {
+        color: #ffffff !important;
+    }
+    
+    /* Exception for buttons inside purple sections */
+    section[class*="bg-primary"] button.bg-white,
+    section[class*="bg-primary"] a.bg-white,
+    div[class*="bg-primary"] button.bg-white,
+    div[class*="bg-primary"] a.bg-white {
+        color: #7e22ce !important;
+    }
+    section[class*="bg-primary"] button.bg-white *,
+    section[class*="bg-primary"] a.bg-white *,
+    div[class*="bg-primary"] button.bg-white *,
+    div[class*="bg-primary"] a.bg-white * {
+        color: #7e22ce !important;
+    }
+
+/* ================================================================
+   PREMIUM INTERACTIONS & ANIMATIONS
+   ================================================================ */
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.press-effect {
+    transition: transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.press-effect:active {
+    transform: scale(0.97);
+}
+
+.btn-magnetic {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn-magnetic:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+}
+.btn-magnetic .icon-wrap {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-magnetic:hover .icon-wrap {
+    transform: translateX(4px);
+}
+
+.stagger-fade > * {
+    opacity: 0;
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+div.card-hover, .card-hover {
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                border-color 0.3s ease;
+}
+div.card-hover:hover, .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(124, 58, 237, 0.10);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .btn-magnetic .icon-wrap {
+        transform: none !important;
+    }
+}
+</style>
+<body class="bg-background text-on-surface">
+<!-- Header / Navigation -->
+<header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold" style="color:#0f172a;">Plantilla 1.</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md font-medium transition-colors" href="../index.html">Inicio</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../nosotros.html">Nosotros</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../index.html#servicios">Servicios</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../contacto.html">Contacto</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="../contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
+  <span class="icon-wrap">Contáctanos</span>
+</a>
+<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
+                Domina tus Redes Sociales.
+            </h1>
+<p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary-container/90 mb-12">
+                Convierte a tus seguidores en clientes leales con estrategias de contenido que atrapan, retienen y multiplican tus ventas.
+            </p>
+<div class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700">
+<img alt="3D Social Media Icons" class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Tnj9XFcjNHv9TekdiJ7cx1eBF-iE0UvldTA_1tK6cWUPXBHq0RZW5bweOm4dqHNkGRWR8gxvekPi7f1MjaBj8Yaus6m1km06NTnro_gQANrNrS4HNM1stjTcePuFfQNxJN7boywvsAiRfAkQuEHn20rH6zfIvJ7Vno-Y9ZWFivsAPXz8vKAv1ebhm_sIjQaZTX8wsZ9c3WSpC-Lrqm9hfBf6Z0ajD-y_IE7uDOHG4M08t-9iRAv9nuby_oY1INFf_-m-wmytOHff"/>
+</div>
+</div>
+<!-- Background accents -->
+<div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
+<div class="absolute top-20 left-10 w-64 h-64 bg-primary-fixed rounded-full blur-[100px]"></div>
+<div class="absolute bottom-10 right-10 w-96 h-96 bg-on-primary-container rounded-full blur-[120px]"></div>
+</div>
+</section>
+<!-- Benefits Bar -->
+<section class="bg-surface-container-lowest py-20 relative z-20 -mt-12 md:-mt-24">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 bg-white p-12 rounded-xl shadow-xl border border-outline-variant/30">
+<!-- Benefit 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">target</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Estrategia Definida</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trazamos la ruta exacta basada en datos para conectar tu marca con la audiencia ideal.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">trending_up</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Crecimiento Escalable</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Impulsamos tu comunidad con métricas reales usando GA4, optimización de conversiones y resultados tangibles.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Contenido Innovador</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Destaca en el feed con formatos creativos y visuales atractivos que rompen el molde del mercado.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ecosistema 360 Section -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-on-surface">Ecosistema Digital 360</h2>
+<p class="font-body-lg text-body-lg text-on-secondary-fixed-variant mb-16">Dominamos las plataformas clave para tu negocio.</p>
+<div class="flex flex-col gap-12">
+<!-- Row 1 -->
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">social_leaderboard</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Facebook</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">camera</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Instagram</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">close</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">X</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">work</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">LinkedIn</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">push_pin</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Pinterest</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">store</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Google Business</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">music_note</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">TikTok</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Plans Section -->
+<section class="bg-surface-container-lowest py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-on-surface">Nuestros Planes</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<!-- Plans Grid (Standard) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+<!-- Plan 1 -->
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Esencial</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(1 Red Social)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$2,470 - $20,800</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1 red social</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Estudio de mercado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 12 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestión de comunidad básica</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Reporte mensual</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<!-- Plan 2 (Featured) -->
+<div class="bg-white border-4 border-primary p-8 rounded-xl shadow-2xl flex flex-col relative transform scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 text-label-sm rounded-full">POPULAR</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Indispensable</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(2 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$2,860 - $26,000</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 2 redes sociales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Estudio de mercado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 12 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestión de comunidad básica</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integración de tracking GTM</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<!-- Plan 3 -->
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Todo en Uno</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(3 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$3,770 - $39,265</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 3 redes sociales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Diseño visual personalizado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 20 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Reportes avanzados GA4</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Atención prioritaria</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<!-- Card 4 & 5 (Simplified for space) -->
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Profesional</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(4 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$4,413 - $52,271</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 4 redes sociales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Diseño visual personalizado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 24 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Reportes avanzados y estrategia</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Soporte prioritario</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors lg:hidden xl:flex">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Omnipresencia</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(5 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$5,850 - $62,350</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 5 redes sociales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Diseño corporativo premium</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 30 publicaciones y Reels</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Consultoría mensual</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Manager dedicado</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+</div>
+<!-- Master Plan Elite (Full Width Bento Style) -->
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 border border-outline-variant/30 flex flex-col md:flex-row gap-12 items-center overflow-hidden group">
+<div class="flex-1">
+<span class="bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded-full mb-6 inline-block">PREMIUM</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface mb-4">Master Plan Élite</h2>
+<div class="text-primary font-bold text-headline-md mb-6">$7,800 - $78,000</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
+                        La solución definitiva para marcas que buscan dominar el mercado. Incluye gestión multiplataforma total, calificación de leads con agentes de IA (Maya/Alberto), analítica avanzada y embudos personalizados en GoHighLevel.
+                    </p>
+<button class="px-12 py-5 bg-primary text-on-primary font-bold rounded-lg hover:shadow-xl hover:translate-y-[-2px] transition-all active:scale-95">CONTRATAR AHORA</button>
+</div>
+<div class="flex-1 w-full">
+<div class="rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-105">
+<img alt="Data Analyst with laptop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_cFbTKhIOepVknkthHQlokuf9l-z47P6SvsGoc5yAHVofY1B5ASLbUbbDoAOubUy_Delf-u8nmruJ0uGwGDCPZd9y5XBUMUk2S7uevIOqFihXP_ZMh2ewVg6dCKvrVkrEVSg4JiEbC4om2rS9m1quDHQWFr0YpHZE126cUFNzEzG17zYL7W4Yk46ER_jMrgErSgWo_w5BIJFjaPlpRbvMPhp5JLO3lcOEMC0SYU_n_eJWO7l-78j_8kvBqT5ooSb2eeAFaWEtKldJ">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="bg-surface-container-lowest py-section-padding-mobile md:py-section-padding-desktop border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-16">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Nuestro Trabajo</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Casos de éxito y marcas que confían en nosotros.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Case 1 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A clean minimalist office interior with white walls, natural wood accents, and bright daylight. Professional people are seen in a soft blur, focusing on creative work in a modern workspace. The aesthetic is professional, calm, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRTOfruyW0-7pDWOma3em0DeAA5_ul_3LUEaP_trTy9rKHV0ObOXLYisrKu5UMQB5IThZ00aWiuJxZDcz4F03XofB9E02Emn0cB8cPKXfJ-V3Nm5I83E3TpP_CILDnRNGCCM1RayEAXFdnbglk1GWT5j-Wx8FkbqztUoZttiHEqKUPftATIoJVLgpeX2Mk1QKWSiSHR7YA6AWmokQQO7D0ZtFTyw9cLH4X02PON1zefSFMtTvnoX0WiZtMkGoLH1nqN0KBB5RZ_H-">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Beviederm</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Sector Estético</p>
+</div>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A professional workspace with multiple screens displaying financial charts, stock market data, and analytical graphs. The lighting is low and sophisticated, featuring cool blue and deep purple tones that suggest precision and high-level financial analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7bdY9bToKCbPoD-nz1ZSvPiPx_X9DRy-1QXXAioNVg8cvxpmcSG4so1u7wMzwDhFLnsT9LaQdFq2iEgeJhQreZZeVtaHSqGucMPR6joAIh1N0DBEl7h7vPvkKqCO86fiFRpZWbQBUUNmxki4EqxTwtIgSlKz1iJm-C0mcZ_xbOJvVc-5f8gKZ6yK7whD2aimdGJ-Odq1-t9taytV5bHPlxkrmAofgZ195cwLRuLvs8tYVLaxobF6PdMGJBR4bOKk5ayWZIMyrFlta">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Sion Capital</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Sector Financiero</p>
+</div>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="An elegant meeting room setting with glass tables, modern ergonomic chairs, and large windows overlooking a city skyline at sunset. The atmosphere is warm and professional, emphasizing high-level corporate consultation and strategic planning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWstWJsuHQUMeJt6OWS7ftJGtXJ-pC4uaIeC5GYgCvEfNsIEjB98SZ99hKQEK_DpdlSkdGhG9tlEQGRK_MZXBerNLujk-3xrvIaNY54pglHRskjdnkxLtfsS3JcqiGrm0Pc7bJWnut_s0gbE4CF9TD2Xr05wSHPXzY25inc7Ve71xjYo0yqh0-FpJP_KH6NElR2VkEqlXoX3tYuexmRU_B-Beo0ccgHwac2qVwN1dCaH127kdy_xrdzBIXkS1TtNqznMIRwdJyNY8">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Trezentos</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Consultoría</p>
+</div>
+</div>
+</div>
+<!-- Case 4 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A dynamic creative agency studio space with white brick walls, colorful abstract art, and multiple workstations equipped with high-end design tools. Bright, natural lighting pours in through large industrial windows, creating an energetic and productive atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqks-3n_FiyhB-de65cqwnGxnfO6pmouxIVSK4UWgEPYTlGg0iWk1rr5R2ryirT6BbSk_gTJ4XeDEIJbJOIbwnekQ27FLywJ-80Z3kqJuPG8EK1ftf-i7AIPM_9CG0sXqfCePK2mBHzz8itsxrVOrcCjGTZd_tIaSJqS1MBfuFsg1W_cPaYsF4DV8V_M8Han0pKn6GyQGyNTAyTyZkLwZ2r4rlLqAr4p5RaI1NwzYx70knAfNqkdjmoAWgsyw2F56_HBx_tvqErTqt">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Waymedia</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Agencias</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+
+    <!-- Col 1: Brand -->
+    <div class="space-y-6">
+      <div class="font-headline-md text-headline-md font-bold" style="color:#ffffff;">Plantilla 1.</div>
+      <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
+        Soluciones digitales premium para impulsar el crecimiento de tu empresa.
+      </p>
+      <div class="flex gap-3">
+        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
+          <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">share</span>
+        </button>
+        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
+          <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">public</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Col 2: Contact -->
+    <div class="space-y-6">
+      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5>
+      <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);">
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span>
+          +34 639 494 000
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span>
+          contacto@plantilla1.com
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span>
+          Madrid, España
+        </li>
+      </ul>
+    </div>
+
+    <!-- Col 3: Nav links -->
+    <div class="space-y-6">
+      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5>
+      <ul class="space-y-3 font-body-md text-body-md">
+        <li><a href="../index.html"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
+        <li><a href="../nosotros.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
+        <li><a href="../index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
+        <li><a href="../contacto.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 4: Quick links -->
+    <div class="space-y-6">
+      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5>
+      <ul class="space-y-3 font-body-md text-body-md">
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Blog</a></li>
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">FAQ</a></li>
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Privacidad</a></li>
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Términos</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);">
+    <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 Plantilla 1 | Todos los derechos reservados.</p>
+    <div class="flex gap-6">
+      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Términos</a>
+      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Soporte</a>
+    </div>
+  </div>
+
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for navbar scroll effect
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const header = document.querySelector('header');
+                    if (window.scrollY > 50) {
+                        header.classList.add('shadow-xl', 'h-16');
+                        header.classList.remove('h-20');
+                    } else {
+                        header.classList.remove('shadow-xl', 'h-16');
+                        header.classList.add('h-20');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Hover animations for pricing cards
+        const cards = document.querySelectorAll('.bg-white.border');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                if (!card.classList.contains('border-primary')) {
+                    card.classList.add('translate-y-[-8px]');
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                if (!card.classList.contains('border-primary')) {
+                    card.classList.remove('translate-y-[-8px]');
+                }
+            });
+        });
+    </script>
+</body></html>
