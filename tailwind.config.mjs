@@ -1,34 +1,12 @@
+import { colors, fonts } from "./src/config/theme.mjs";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
   content: ["./src/**/*.{astro,html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors: {
-        surface: "#ffffff",
-        "surface-dim": "#f8f9fc",
-        "surface-container-lowest": "#ffffff",
-        "surface-container-low": "#f8f9fc",
-        "surface-container": "#f1f0fb",
-        "surface-container-high": "#ede9fe",
-        "surface-container-highest": "#ddd6fe",
-        "on-surface": "#0f172a",
-        "on-surface-variant": "#475569",
-        outline: "#e2e8f0",
-        "outline-variant": "#e2e8f0",
-        primary: "#7e22ce",
-        "on-primary": "#ffffff",
-        "primary-container": "#7e22ce",
-        "on-primary-container": "#ffffff",
-        "primary-fixed": "#ede9fe",
-        "on-primary-fixed": "#3b0764",
-        "primary-fixed-dim": "#ddd6fe",
-        "inverse-primary": "#c4b5fd",
-        secondary: "#6d28d9",
-        "on-secondary": "#ffffff",
-        background: "#ffffff",
-        "on-background": "#0f172a",
-      },
+      colors,
       borderRadius: {
         DEFAULT: "0.5rem",
         lg: "0.75rem",
@@ -44,14 +22,14 @@ export default {
         "container-max": "1280px",
       },
       fontFamily: {
-        "display-hero": ["Syne", "sans-serif"],
-        "display-hero-mobile": ["Syne", "sans-serif"],
-        "headline-lg": ["Syne", "sans-serif"],
-        "headline-lg-mobile": ["Syne", "sans-serif"],
-        "headline-md": ["Syne", "sans-serif"],
-        "body-lg": ["Outfit", "sans-serif"],
-        "body-md": ["Outfit", "sans-serif"],
-        "label-sm": ["Outfit", "sans-serif"],
+        "display-hero": [fonts.display],
+        "display-hero-mobile": [fonts.display],
+        "headline-lg": [fonts.display],
+        "headline-lg-mobile": [fonts.display],
+        "headline-md": [fonts.display],
+        "body-lg": [fonts.body],
+        "body-md": [fonts.body],
+        "label-sm": [fonts.body],
       },
       fontSize: {
         "display-hero": ["72px", { lineHeight: "1.1", letterSpacing: "-0.03em", fontWeight: "700" }],

@@ -1,11 +1,40 @@
 ---
+import '../styles/global.css';
+import { colors, fonts, logo } from '../config/theme.mjs';
 export interface Props {
   title: string;
   currentPage?: 'inicio' | 'nosotros' | 'contacto' | 'servicios';
 }
 
 const { title, currentPage = 'inicio' } = Astro.props;
-import '../styles/global.css';
+
+// --- Tema → variables CSS que consume global.css (única fuente: src/config/theme.mjs) ---
+const hexToRgb = (hex: string) => {
+  const h = hex.replace('#', '');
+  const n = parseInt(h.length === 3 ? h.split('').map(c => c + c).join('') : h, 16);
+  return `${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}`;
+};
+const cssVars: Record<string, string> = {
+  '--color-primary': colors.primary,
+  '--color-primary-rgb': hexToRgb(colors.primary),
+  '--color-primary-dark': colors.secondary,
+  '--color-primary-fixed': colors['primary-fixed'],
+  '--color-on-primary': colors['on-primary'],
+  '--color-on-primary-fixed': colors['on-primary-fixed'],
+  '--color-inverse-primary': colors['inverse-primary'],
+  '--color-surface': colors.surface,
+  '--color-surface-dim': colors['surface-dim'],
+  '--color-surface-container-lowest': colors['surface-container-lowest'],
+  '--color-on-surface': colors['on-surface'],
+  '--color-on-surface-rgb': hexToRgb(colors['on-surface']),
+  '--color-on-surface-variant': colors['on-surface-variant'],
+  '--color-body-text': colors['body-text'],
+  '--color-outline': colors.outline,
+  '--color-footer-bg': colors['on-primary-fixed'],
+  '--font-display': fonts.display,
+  '--font-body': fonts.body,
+};
+const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`).join(';') + '}';
 ---
 <!DOCTYPE html>
 <html class="light" lang="es">
@@ -13,8 +42,9 @@ import '../styles/global.css';
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>{title}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href={fonts.googleHref} rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <style set:html={rootStyle}></style>
 </head>
 <body class="bg-background text-on-surface font-body-md">
   <header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">

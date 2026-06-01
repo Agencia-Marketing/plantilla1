@@ -2,34 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --- Brand colors — change these per client --- */
-  --color-primary: #7e22ce;
-  --color-primary-rgb: 124, 58, 237;
-  --color-primary-dark: #6d28d9;
-  --color-primary-dark-rgb: 109, 40, 217;
-  --color-primary-fixed: #ede9fe;
-  --color-primary-fixed-rgb: 237, 233, 254;
-  --color-primary-fixed-dim: #ddd6fe;
-  --color-inverse-primary: #c4b5fd;
-  --color-inverse-primary-rgb: 196, 181, 253;
-  --color-on-primary: #ffffff;
-  --color-on-primary-fixed: #3b0764;
-
-  /* --- Neutral / surface colors --- */
-  --color-surface: #ffffff;
-  --color-surface-dim: #f8f9fc;
-  --color-surface-container-lowest: #ffffff;
-  --color-on-surface: #0f172a;
-  --color-on-surface-rgb: 15, 23, 42;
-  --color-on-surface-variant: #475569;
-  --color-body-text: #334155;
-  --color-body-text-rgb: 51, 65, 85;
-  --color-outline: #e2e8f0;
-
-  /* --- Footer --- */
-  --color-footer-bg: #3b0764;
-}
+/* Las variables de marca (--color-primary, --color-surface, --color-on-*,
+   --color-footer-bg, --font-*, …) se inyectan desde src/config/theme.mjs
+   vía Layout.astro. Cambia los valores ahí, no aquí. */
 
 @layer base {
   html { scroll-behavior: smooth; }
@@ -139,7 +114,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-body);
   background-color: var(--color-surface);
   color: var(--color-body-text);
   -webkit-font-smoothing: antialiased;
@@ -147,7 +122,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-display);
   letter-spacing: -0.03em;
   color: var(--color-on-surface);
 }
@@ -165,7 +140,7 @@ header {
 
 nav a {
   color: var(--color-on-surface-variant) !important;
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-body);
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -357,12 +332,12 @@ footer {
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div.font-bold {
   color: var(--color-on-primary) !important;
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-display);
 }
 
 footer p, footer span, footer li, footer a, footer div, footer label {
   color: rgba(255, 255, 255, 0.85) !important;
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-body);
 }
 
 footer h5, footer [class*="text-label"] {
